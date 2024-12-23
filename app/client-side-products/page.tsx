@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { TiArrowLeft } from "react-icons/ti";
+import Image from "next/image";
 
 interface Product {
   id: number;
@@ -12,7 +13,7 @@ interface Product {
   image: string;
 }
 
-const page = () => {
+const Page = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -52,9 +53,11 @@ const page = () => {
               key={product.id}
               className="bg-slate-600 mt-4 border-2 rounded-lg shadow-lg border-cyan-300 p-4 flex flex-col h-[450px] transform transition duration-300 hover:scale-105"
             >
-              <img
+              <Image
                 src={product.image}
                 alt={product.title}
+                height={0}
+                width={0}
                 className="w-full h-40 object-contain mb-4"
               />
               <h2 className="text-lg font-extrabold text-center text-slate-950">{`${product.title.slice(
@@ -89,4 +92,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

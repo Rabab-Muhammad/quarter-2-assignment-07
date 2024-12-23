@@ -6,7 +6,6 @@ const Page = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-blue-100 px-4 ">
       <div className="bg-yellow-400 p-6 md:p-8 rounded-lg shadow-lg max-w-md md:max-w-lg w-full">
-        {/* Heading */}
         <h1 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-2">
           Data Fetching
         </h1>
@@ -35,7 +34,7 @@ const Page = () => {
           browser.
         </p>
 
-        {/* Buttons in Flex Row */}
+        {/* Buttons */}
         <div className="flex flex-col text-center sm:flex-row justify-center gap-4 py-2">
           <Link href="/client-side-products">
             <Button className="bg-blue-600 text-white text-sm md:text-lg font-semibold rounded-md shadow-lg hover:bg-blue-700 transform transition duration-300 hover:scale-105  py-6">
