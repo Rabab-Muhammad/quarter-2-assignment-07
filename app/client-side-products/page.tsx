@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { TiArrowLeft } from "react-icons/ti";
-import Image from "next/image";
 
 interface Product {
   id: number;
@@ -53,11 +52,9 @@ const Page = () => {
               key={product.id}
               className="bg-slate-600 mt-4 border-2 rounded-lg shadow-lg border-cyan-300 p-4 flex flex-col h-[450px] transform transition duration-300 hover:scale-105"
             >
-              <Image
+              <img
                 src={product.image}
                 alt={product.title}
-                height={160}
-                width={100}
                 className="w-full h-40 object-contain mb-4"
               />
               <h2 className="text-lg font-extrabold text-center text-slate-950">{`${product.title.slice(
