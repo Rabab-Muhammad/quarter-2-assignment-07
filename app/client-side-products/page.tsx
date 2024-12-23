@@ -56,8 +56,8 @@ const Page = () => {
               <Image
                 src={product.image}
                 alt={product.title}
-                height={0}
-                width={0}
+                height={160}
+                width={100}
                 className="w-full h-40 object-contain mb-4"
               />
               <h2 className="text-lg font-extrabold text-center text-slate-950">{`${product.title.slice(
