@@ -24,7 +24,7 @@ const page = () => {
           <span className="text-md md:text-lg font-semibold">
             Client-Side Fetching:
           </span>{" "}
-          Data is fetched in the user's browser after the page loads.
+          Data is fetched in the user&apos;s browser after the page loads.
         </p>
         <p className="text-sm md:text-base mb-3 ">
           <span className="text-md md:text-lg font-semibold">
