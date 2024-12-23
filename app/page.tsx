@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const Page = () => {
+const page = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-blue-100 px-4 ">
       <div className="bg-yellow-400 p-6 md:p-8 rounded-lg shadow-lg max-w-md md:max-w-lg w-full">
@@ -52,4 +52,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
