@@ -10,7 +10,7 @@ interface Book {
   available: boolean;
 }
 
-const page = async () => {
+const Page = async () => {
   const response = await fetch("https://simple-books-api.glitch.me/books/");
   const parsedResponse: Book[] = await response.json();
   console.log("Book", parsedResponse);
@@ -60,4 +60,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;
